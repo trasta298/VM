@@ -2,7 +2,7 @@
 var blocks = [];
 
 
-function Block(x,y,z,dimension){
+function Object(x,y,z,dimension){
 	this.x = x;
 	this.y = y;
 	this.z = z;
@@ -21,34 +21,34 @@ function Block(x,y,z,dimension){
 		電力
 	getDimension();
 		ディメンション
-	SetMachineBlock(x,y,z,id,side);
+	SetMachineObject(x,y,z,id,side);
 		void
 	
 	*/
 }
 
-Block.prototype.getX = function(){
+Object.prototype.getX = function(){
 	return this.x;
 }
 
-Block.prototype.getY = function(){
+Object.prototype.getY = function(){
 	return this.y;
 }
 
-Block.prototype.getZ = function(){
+Object.prototype.getZ = function(){
 	return this.z;
 }
 
-Block.prototype.getDimension = function(){
+Object.prototype.getDimension = function(){
 	return this.dimension;
 }
 
-Block.prototype.getPower = function(){
+Object.prototype.getPower = function(){
 	return this.power;
 }
 
 //追加工業ブロック設置関数
-Block.prototype.SetMachineBlock = function(x,y,z,id,side){
+Object.prototype.SetMachineObject = function(x,y,z,id,side){
 	preventDefault();
 	switch(side){
 		case 0:y-=1;break;
