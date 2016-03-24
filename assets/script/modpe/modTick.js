@@ -3,6 +3,6 @@
 
 */
 
-function modTick(){
-	
+function modTick() {
+
 }

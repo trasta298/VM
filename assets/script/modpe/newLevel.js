@@ -3,6 +3,6 @@
 
 */
 
-function newLevel(){
-	
+function newLevel() {
+
 }
